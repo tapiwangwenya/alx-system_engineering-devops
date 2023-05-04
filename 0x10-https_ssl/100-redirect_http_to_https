@@ -47,7 +47,7 @@ frontend b3zaleel-alx.tech-https-frontend
         default_backend ta.tech-backend
 backend ta.tech-backend
         balance roundrobin
-        server 104749-web-02 54.144.129.203:80 check
-        server 104749-web-02 52.91.128.167:80 check
+        server 104749-web-02 54.160.69.44:80 check
+        server 104749-web-02 52.87.155.41:80 check
 # end of parameters
                                 
