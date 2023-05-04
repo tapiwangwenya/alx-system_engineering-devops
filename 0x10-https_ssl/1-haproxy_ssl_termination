@@ -35,17 +35,17 @@ defaults
 
 
 
-# start of parameters for ta.tech
-frontend nwabueze.tech-http-frontend
+# start of parameters for tapiwangwenya.tech
+frontend tapiwangwenya.tech-http-frontend
         bind     *:80
         redirect scheme https code 301 if !{ ssl_fc }
         http-request set-header X-Forwarded-Proto http
-        default_backend  ta.tech-backend
+        default_backend  tapiwangwenya.tech-backend
 frontend b3zaleel-alx.tech-https-frontend
-        bind *:443 ssl crt /etc/letsencrypt/live/www.ta.tech/fullchain.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.tapiwangwenya.tech/fullchain.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend ta.tech-backend
-backend ta.tech-backend
+        default_backend tapiwangwenya.tech-backend
+backend tapiwangwenya.tech-backend
         balance roundrobin
         server 104749-web-01 54.144.129.203:80 check
         server 104749-web-02 52.91.128.167:80 check
